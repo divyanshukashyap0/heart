@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- SECURITY: Redirect immediately if proposal was not accepted -->
+  <script>
+    if (localStorage.getItem('proposalAccepted') !== 'true') {
+      window.location.replace('../index.html');
+    }
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story Begins | Mahima</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container"
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem;">
+
+    <main id="main-content" class="main-content" tabindex="-1"
+      style="width: 100%; max-width: 800px; text-align: center;">
+
+      <!-- Top Message -->
+      <section class="animate-fade-scale" style="margin-bottom: 3rem;">
+        <h1
+          style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; background: linear-gradient(135deg, #ffffff 0%, #fcd5ce 50%, #e6c280 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          She Said Yes. <span aria-hidden="true">❤️</span>
+        </h1>
+        <p
+          style="font-family: var(--font-body); font-size: 1.25rem; color: var(--text-secondary); line-height: 1.8; font-weight: 300;">
+          Okay...<br>
+          this is where our little story officially begins.
+        </p>
+      </section>
+
+      <!-- Timestamp Section -->
+      <section class="animate-fade-up"
+        style="margin-bottom: 3rem; background: rgba(28, 11, 20, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 20px; border: 1px solid rgba(230, 194, 128, 0.2);">
+        <p
+          style="font-size: 1.1rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 500; text-transform: uppercase; letter-spacing: 2px;">
+          Together Since
+        </p>
+        <p id="relationship-timestamp"
+          style="font-family: var(--font-body); font-size: 1.4rem; color: var(--text-primary); font-weight: 400;">
+          Loading...
+        </p>
+      </section>
+
+      <!-- Live Relationship Time Counter -->
+      <section class="countdown-container animate-fade-scale" style="margin-bottom: 4rem;"
+        aria-label="Live Relationship Timer">
+        <div class="countdown-timer" aria-live="off" style="justify-content: center;">
+          <div class="countdown-box">
+            <span id="count-years" class="countdown-number">00</span>
+            <span class="countdown-label">Years</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-months" class="countdown-number">00</span>
+            <span class="countdown-label">Months</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-days" class="countdown-number">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-hours" class="countdown-number">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-mins" class="countdown-number">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-box">
+            <span id="count-secs" class="countdown-number">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our First Chapter Section -->
+      <section class="animate-fade-up" style="margin-bottom: 4rem;">
+        <h2
+          style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+          Our First Chapter
+        </h2>
+        <div
+          style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-secondary); line-height: 2; font-weight: 300;">
+          <p>Started with one question.</p>
+          <p>Answered with one YES.</p>
+          <p style="color: var(--accent-gold); font-weight: 400; margin-top: 0.5rem;">Now let's see where the story
+            goes.</p>
+        </div>
+        <div style="margin-top: 2rem; display: inline-block;">
+          <!-- Subtle animated heart -->
+          <svg class="beating-heart" style="width: 40px; height: 40px; animation: heartbeat 2s infinite ease-in-out;"
+            viewBox="0 0 24 24" fill="#e05275" stroke="none" aria-hidden="true">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+            </path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Final Message -->
+      <section class="animate-fade-up"
+        style="text-align: left; background: rgba(28, 11, 20, 0.72); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(230, 194, 128, 0.35); border-radius: 28px; padding: 3rem 2.5rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55); margin-bottom: 4rem;">
+        <p
+          style="font-family: var(--font-body); font-size: 1.25rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Thank you for saying yes, Mahima. ❤️
+        </p>
+        <p
+          style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-weight: 300;">
+          I don't know where this journey will take us,<br>
+          and maybe we don't need to know yet.<br><br>
+          We can take it one day,<br>
+          one conversation,<br>
+          one laugh,<br>
+          and one memory at a time.
+        </p>
+        <p
+          style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-weight: 300;">
+          But today...<br>
+          I'm just really happy that our story gets a chance to begin.<br>
+          Here's to the first moment of something new.
+        </p>
+        <p style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-gold); margin-top: 2rem;">
+          — Tera Dibbu ❤️
+        </p>
+      </section>
+
+      <!-- Navigation -->
+      <div style="margin-bottom: 3rem;">
+        <a href="../index.html"
+          style="font-family: var(--font-body); font-size: 0.9rem; color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--text-muted); padding-bottom: 2px; transition: color 0.3s;"
+          onmouseover="this.style.color='var(--accent-gold)'; this.style.borderColor='var(--accent-gold)';"
+          onmouseout="this.style.color='var(--text-muted)'; this.style.borderColor='var(--text-muted)';">
+          Replay Our Beginning
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <style>
+    @keyframes heartbeat {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      15% {
+        transform: scale(1.15);
+      }
+
+      30% {
+        transform: scale(1);
+      }
+
+      45% {
+        transform: scale(1.15);
+      }
+
+      60% {
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="../js/floating-hearts.js"></script>
+  <script src="../js/countdown.js"></script>
+</body>
+
+</html>

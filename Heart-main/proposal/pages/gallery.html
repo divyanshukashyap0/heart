@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherished Memories Gallery | Mahima</title>
+  <meta name="description"
+    content="Explore a masonry photo gallery of cherished memories and special moments dedicated to Mahima." />
+  <meta name="keywords" content="Photo Gallery, Mahima, Memories, Photography, Romantic Journey" />
+  <meta name="author" content="Mahima's Partner" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:title" content="Cherished Memories Gallery | Mahima" />
+  <meta property="og:description"
+    content="Explore a masonry photo gallery of cherished memories and special moments dedicated to Mahima." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Journey For Mahima" />
+
+  <!-- Twitter Cards SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cherished Memories Gallery | Mahima" />
+  <meta name="twitter:description"
+    content="Explore a masonry photo gallery of cherished memories and special moments dedicated to Mahima." />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Premium Preloader Screen -->
+  <div id="preloader" class="preloader-overlay" aria-busy="true" aria-live="polite"
+    aria-label="Loading page experience">
+    <div class="loader-content">
+      <div class="loader-heart-container" aria-hidden="true">
+        <div class="loader-heart"></div>
+      </div>
+      <div class="loader-title">A Journey For Mahima</div>
+      <div class="loader-progress-wrap">
+        <div class="loader-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="loader-bar-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <!-- Background Canvas for Night Sky Stars & Soft Moving Particles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- Header Navigation -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="../index.html" class="brand-logo" aria-label="For Mahima ❤️ Homepage">
+          For Mahima <span class="brand-heart" aria-hidden="true">❤️</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./story.html" class="nav-link">Our Story</a></li>
+          <li><a href="./reasons.html" class="nav-link">Reasons I Like You</a></li>
+          <li><a href="./gallery.html" class="nav-link active" aria-current="page">Gallery</a></li>
+          <li><a href="./letter.html" class="nav-link">Love Letter</a></li>
+          <li><a href="./proposal.html" class="nav-link" style="color: var(--accent-gold); font-weight: 700;">Proposal
+              <span aria-hidden="true">💕</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section class="hero-section" style="text-align: center; margin-bottom: 2rem;">
+        <span class="hero-tag">A Few Things Worth Remembering</span>
+        <h1 class="hero-title"
+          style="font-family: var(--font-heading); font-size: 3.4rem; font-weight: 700; margin-top: 0.5rem; background: linear-gradient(135deg, #ffffff 0%, #fcd5ce 50%, #e6c280 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          A Few Things Worth Remembering
+        </h1>
+        <p class="hero-subtitle"
+          style="max-width: 600px; margin: 1rem auto 0 auto; color: var(--text-secondary); font-size: 1.15rem; font-weight: 300; line-height: 1.8;">
+          Some things are difficult to put into words. Sometimes a picture says enough.
+        </p>
+      </section>
+
+      <!-- Elegant Masonry Grid with Lazy Loading (Dynamic) -->
+      <section id="gallery-container" class="gallery-masonry-container" aria-label="Photo Gallery Grid">
+        <!-- Gallery items will be injected here by js/gallery.js -->
+      </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+      <p class="footer-text">
+        Made with eternal devotion for <strong style="color: var(--accent-gold);">Mahima</strong> <span
+          class="footer-heart" aria-hidden="true">❤️</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox Gallery">
+    <button class="lightbox-btn lightbox-close" type="button" aria-label="Close Lightbox Modal">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" type="button" aria-label="Next Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap">
+        <img class="lightbox-img" src="" alt="Fullscreen memory preview" />
+      </div>
+      <div class="lightbox-caption">
+        <div class="lightbox-title">Memory Title</div>
+        <div class="lightbox-text" style="font-size: 0.95rem; opacity: 0.85; margin-top: 0.3rem; font-style: italic;">Memory description</div>
+        <div class="lightbox-counter">Memory 1 of 8</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/reveal.js"></script>
+  <script src="../js/floating-hearts.js"></script>
+  <script src="../js/cursor-trail.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

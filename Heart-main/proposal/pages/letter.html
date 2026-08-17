@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Letter For You | Mahima</title>
+  <meta name="description" content="A personal heartfelt love letter written especially for Mahima with interactive opening envelope animation." />
+  <meta name="keywords" content="Love Letter, Mahima, Personal Message, Heartfelt Letter, Romantic Proposal" />
+  <meta name="author" content="Mahima's Partner" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:title" content="A Letter For You | Mahima" />
+  <meta property="og:description" content="A personal heartfelt love letter written especially for Mahima with interactive opening envelope animation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Journey For Mahima" />
+  
+  <!-- Twitter Cards SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Letter For You | Mahima" />
+  <meta name="twitter:description" content="A personal heartfelt love letter written especially for Mahima with interactive opening envelope animation." />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Premium Preloader Screen -->
+  <div id="preloader" class="preloader-overlay" aria-busy="true" aria-live="polite" aria-label="Loading page experience">
+    <div class="loader-content">
+      <div class="loader-heart-container" aria-hidden="true">
+        <div class="loader-heart"></div>
+      </div>
+      <div class="loader-title">A Journey For Mahima</div>
+      <div class="loader-progress-wrap">
+        <div class="loader-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="loader-bar-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <!-- Background Canvas for Night Sky Stars & Soft Moving Particles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- Header Navigation -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="../index.html" class="brand-logo" aria-label="For Mahima ❤️ Homepage">
+          For Mahima <span class="brand-heart" aria-hidden="true">❤️</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./story.html" class="nav-link">Our Story</a></li>
+          <li><a href="./reasons.html" class="nav-link">Reasons I Like You</a></li>
+          <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./questions.html" class="nav-link">Questions</a></li>
+          <li><a href="./letter.html" class="nav-link active" aria-current="page">Love Letter</a></li>
+          <li><a href="./proposal.html" class="nav-link" style="color: var(--accent-gold); font-weight: 700;">Proposal <span aria-hidden="true">💕</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section class="hero-section" style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="hero-tag">From The Heart</span>
+        <h1 class="hero-title" style="font-family: var(--font-heading); font-size: 3.4rem; font-weight: 700; margin-top: 0.5rem; background: linear-gradient(135deg, #ffffff 0%, #fcd5ce 50%, #e6c280 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          A Personal Message
+        </h1>
+        <p class="hero-subtitle" style="max-width: 580px; margin: 1rem auto 0 auto; color: var(--text-secondary); font-size: 1.15rem; font-weight: 300; line-height: 1.8;">
+          Tap or click the envelope below to break the seal and read my letter to you.
+        </p>
+      </section>
+
+      <!-- Letter Stage Container -->
+      <section class="letter-stage" aria-label="Interactive Letter Envelope">
+
+        <!-- Sealed Envelope -->
+        <div id="envelope-trigger" class="envelope-wrapper" tabindex="0" role="button" aria-label="Envelope sealed with a golden seal. Press Enter or Space to open letter">
+          <div class="envelope-flap" aria-hidden="true"></div>
+          <div class="wax-seal" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <div class="envelope-prompt" aria-hidden="true">Tap Envelope To Open ✉️</div>
+        </div>
+
+        <!-- Unfolded Letter Card -->
+        <article class="letter-card" aria-label="Love Letter Content">
+          <div class="letter-body" aria-live="polite">
+            <span id="typed-letter" class="letter-body-text"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+          </div>
+
+          <div class="letter-actions">
+            <button id="skip-type-btn" class="skip-type-btn" type="button" aria-label="Skip animation and reveal full letter text immediately">Skip Typing</button>
+            <p style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 1.5rem; font-weight: 500;">
+              There's just one thing left to ask...
+            </p>
+            <a href="./proposal.html" class="btn-begin" aria-label="Proceed to Proposal page">
+              <span>Continue &rarr;</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+      <p class="footer-text">
+        Made with eternal devotion for <strong style="color: var(--accent-gold);">Mahima</strong> <span class="footer-heart" aria-hidden="true">❤️</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/reveal.js"></script>
+  <script src="../js/floating-hearts.js"></script>
+  <script src="../js/cursor-trail.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

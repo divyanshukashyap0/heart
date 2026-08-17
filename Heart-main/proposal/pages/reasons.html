@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reasons I Like You | Mahima</title>
+  <meta name="description"
+    content="A personal collection of little things Tera Dibbu notices and genuinely likes about Mahima." />
+  <meta name="keywords" content="Reasons I Like You, Mahima, Tera Dibbu, Personal Confession, Interactive Cards" />
+  <meta name="author" content="Tera Dibbu" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:title" content="Reasons I Like You | Mahima" />
+  <meta property="og:description"
+    content="A personal collection of little things Tera Dibbu notices and genuinely likes about Mahima." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Journey For Mahima" />
+
+  <!-- Twitter Cards SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reasons I Like You | Mahima" />
+  <meta name="twitter:description"
+    content="A personal collection of little things Tera Dibbu notices and genuinely likes about Mahima." />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Premium Preloader Screen -->
+  <div id="preloader" class="preloader-overlay" aria-busy="true" aria-live="polite"
+    aria-label="Loading page experience">
+    <div class="loader-content">
+      <div class="loader-heart-container" aria-hidden="true">
+        <div class="loader-heart"></div>
+      </div>
+      <div class="loader-title">A Journey For Mahima</div>
+      <div class="loader-progress-wrap">
+        <div class="loader-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="loader-bar-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <!-- Background Canvas for Night Sky Stars & Soft Moving Particles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- Header Navigation -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="../index.html" class="brand-logo" aria-label="For Mahima ❤️ Homepage">
+          For Mahima <span class="brand-heart" aria-hidden="true">❤️</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./story.html" class="nav-link">Our Story</a></li>
+          <li><a href="./reasons.html" class="nav-link active" aria-current="page">Reasons I Like You</a></li>
+          <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./questions.html" class="nav-link">Questions</a></li>
+          <li><a href="./letter.html" class="nav-link">Love Letter</a></li>
+          <li><a href="./proposal.html" class="nav-link" style="color: var(--accent-gold); font-weight: 700;">Proposal
+              <span aria-hidden="true">💕</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section class="hero-section" style="text-align: center; margin-bottom: 2rem;">
+        <span class="hero-tag">THINGS I NOTICE</span>
+        <h1 class="hero-title"
+          style="font-family: var(--font-heading); font-size: 3.4rem; font-weight: 700; margin-top: 0.5rem; background: linear-gradient(135deg, #ffffff 0%, #fcd5ce 50%, #e6c280 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          Reasons I Like You <span aria-hidden="true">❤️</span>
+        </h1>
+        <p class="hero-subtitle"
+          style="max-width: 600px; margin: 1rem auto 0 auto; color: var(--text-secondary); font-size: 1.15rem; font-weight: 300; line-height: 1.8;">
+          "Not a list of perfect reasons. Just a few little things about you that I genuinely like."
+        </p>
+      </section>
+
+      <!-- Glass 3D Flip Cards Grid -->
+      <section class="reasons-flip-grid" aria-label="Interactive Reasons Cards">
+
+        <!-- Card 1: Your Smile -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 1: Your Smile - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">01</span>
+              <div class="flip-card-icon" aria-hidden="true">❤️</div>
+              <h2 class="flip-card-title">Your Smile</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">01</span>
+              <h2 class="flip-card-back-title">Your Smile ❤️</h2>
+              <p class="flip-card-desc">"There's something about your smile that I can't help but notice."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Your Eyes -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 2: Your Eyes - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">02</span>
+              <div class="flip-card-icon" aria-hidden="true">✨</div>
+              <h2 class="flip-card-title">Your Eyes</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">02</span>
+              <h2 class="flip-card-back-title">Your Eyes ✨</h2>
+              <p class="flip-card-desc">"Your eyes are honestly one of the first things that catch my attention."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+
+
+        <!-- Card 3: Your Sweetcorn Love -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 3: Your Sweetcorn Love - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">03</span>
+              <div class="flip-card-icon" aria-hidden="true">🌽</div>
+              <h2 class="flip-card-title">Your Sweetcorn Love</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">03</span>
+              <h2 class="flip-card-back-title">Your Sweetcorn Love 🌽</h2>
+              <p class="flip-card-desc">"I don't know what you and sweetcorn have going on, but I know it's serious. 😂"
+              </p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Your Expressions -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 4: Your Expressions - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">04</span>
+              <div class="flip-card-icon" aria-hidden="true">😊</div>
+              <h2 class="flip-card-title">Your Expressions</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">04</span>
+              <h2 class="flip-card-back-title">Your Expressions 😊</h2>
+              <p class="flip-card-desc">"Those little expressions you make without even realizing it are genuinely
+                cute."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Your Laugh -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 5: Your Laugh - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">05</span>
+              <div class="flip-card-icon" aria-hidden="true">❤️</div>
+              <h2 class="flip-card-title">Your Laugh</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">05</span>
+              <h2 class="flip-card-back-title">Your Laugh ❤️</h2>
+              <p class="flip-card-desc">"Your laugh has a way of making the moment feel lighter."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Your Style -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 6: Your Style - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">06</span>
+              <div class="flip-card-icon" aria-hidden="true">✨</div>
+              <h2 class="flip-card-title">Your Style</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">06</span>
+              <h2 class="flip-card-back-title">Your Style ✨</h2>
+              <p class="flip-card-desc">"There's something about your personal style that I genuinely like."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: The Little Details -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 7: The Little Details - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">07</span>
+              <div class="flip-card-icon" aria-hidden="true">🌷</div>
+              <h2 class="flip-card-title">The Little Details</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">07</span>
+              <h2 class="flip-card-back-title">The Little Details 🌷</h2>
+              <p class="flip-card-desc">"Sometimes it's not the big things. It's the tiny details about you that I end
+                up noticing."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Simply You -->
+        <article class="flip-card-container" tabindex="0" role="button"
+          aria-label="Reason 8: Simply You - Press Enter or Space to flip">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card-surface">
+              <span class="flip-card-badge">08</span>
+              <div class="flip-card-icon" aria-hidden="true">❤️</div>
+              <h2 class="flip-card-title">Simply You</h2>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip ↺</span>
+            </div>
+            <div class="flip-card-back glass-card-surface">
+              <span class="flip-card-badge">08</span>
+              <h2 class="flip-card-back-title">Simply You ❤️</h2>
+              <p class="flip-card-desc">"After noticing all these little things, I think the simplest reason is that I
+                just like you for being you."</p>
+              <span class="flip-card-hint" aria-hidden="true">Click to flip back ↺</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Final Confession Card -->
+      <section class="final-reason-card animate-fade-scale reveal-zoom"
+        style="max-width: 680px; margin: 4rem auto 3.5rem auto; text-align: center; background: rgba(28, 11, 20, 0.72); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(230, 194, 128, 0.35); border-radius: 28px; padding: 3.5rem 2.5rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 30px rgba(224, 82, 117, 0.1); position: relative; z-index: 3;">
+        <h2
+          style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.25rem; background: linear-gradient(135deg, #ffffff 0%, #fcd5ce 50%, #e6c280 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          And honestly...
+        </h2>
+        <p
+          style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; font-weight: 300;">
+          These are just a few things I could put into words.
+        </p>
+        <p
+          style="font-family: var(--font-body); font-size: 1.25rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 2.5rem; font-weight: 400;">
+          But there's more I'd like to share with you.
+        </p>
+        <div>
+          <a href="./gallery.html" class="btn-begin" aria-label="There's More I Want You to See">
+            <span>There's More I Want You to See &rarr;</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+      <p class="footer-text">
+        Made with a little courage, for <strong style="color: var(--accent-gold);">Mahima</strong> <span
+          class="footer-heart" aria-hidden="true">❤️</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/reveal.js"></script>
+  <script src="../js/floating-hearts.js"></script>
+  <script src="../js/cursor-trail.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

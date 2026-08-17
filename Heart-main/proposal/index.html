@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Journey For Mahima | Welcome</title>
+  <meta name="description"
+    content="A romantic, interactive personal journey created with devotion for Mahima. Explore our story, reasons I like you, photo gallery, love letter, and proposal." />
+  <meta name="keywords"
+    content="Mahima, Love Story, Romantic Journey, Personal Proposal, Memory Gallery, Love Letter" />
+  <meta name="author" content="Mahima's Partner" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:title" content="A Journey For Mahima | Welcome" />
+  <meta property="og:description" content="A romantic interactive journey created with love and devotion for Mahima." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Journey For Mahima" />
+
+  <!-- Twitter Cards SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Journey For Mahima | Welcome" />
+  <meta name="twitter:description"
+    content="A romantic interactive journey created with love and devotion for Mahima." />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Premium Preloader Screen -->
+  <div id="preloader" class="preloader-overlay" aria-busy="true" aria-live="polite"
+    aria-label="Loading page experience">
+    <div class="loader-content">
+      <div class="loader-heart-container" aria-hidden="true">
+        <div class="loader-heart"></div>
+      </div>
+      <div class="loader-title">A Journey For Mahima</div>
+      <div class="loader-progress-wrap">
+        <div class="loader-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+          id="loader-progressbar">
+          <div class="loader-bar-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <!-- Background Canvas for Night Sky Stars & Soft Moving Particles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- Navigation Header -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="./index.html" class="brand-logo" aria-label="For Mahima ❤️ Homepage">
+          For Mahima <span class="brand-heart" aria-hidden="true">❤️</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="./pages/story.html" class="nav-link">Our Story</a></li>
+          <li><a href="./pages/reasons.html" class="nav-link">Reasons I Like You</a></li>
+          <li><a href="./pages/gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./pages/letter.html" class="nav-link">Love Letter</a></li>
+          <li><a href="./pages/proposal.html" class="nav-link"
+              style="color: var(--accent-gold); font-weight: 700;">Proposal <span aria-hidden="true">💕</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section - Glassmorphism Home Experience -->
+    <main id="main-content" class="main-content"
+      style="display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 160px);"
+      tabindex="-1">
+      <section class="glass-home-card animate-fade-scale reveal-zoom" aria-labelledby="home-heading">
+        <h1 id="home-heading" class="home-heading">Hi Mahima <span aria-hidden="true">❤️</span></h1>
+        <div class="home-subtitle">
+          <p>I made something special for you.</p>
+          <p>
+            <span>There's something I've been wanting to tell you for a while...</span>
+            <span>But somehow, saying it face to face never felt easy.</span>
+          </p>
+          <p>
+            <span>So I made this little journey instead.</span>
+          </p>
+          <p>
+            <span>Take your time.</span>
+            <span>And when you reach the end,</span>
+            <span>you'll understand what I've been trying to say.</span>
+          </p>
+        </div>
+
+        <div class="home-cta">
+          <a href="./pages/story.html" class="btn-begin" aria-label="Begin our journey">
+            <span>Begin the Journey &rarr;</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+      <p class="footer-text">
+        Made with eternal devotion for <strong style="color: var(--accent-gold);">Mahima</strong> <span
+          class="footer-heart" aria-hidden="true">❤️</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/reveal.js"></script>
+  <script src="./js/floating-hearts.js"></script>
+  <script src="./js/cursor-trail.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

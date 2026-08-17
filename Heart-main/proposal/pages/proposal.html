@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Proposal | For Mahima</title>
+  <meta name="description" content="A romantic and heartfelt proposal page created specifically for Mahima with interactive response modals." />
+  <meta name="keywords" content="Proposal, Mahima, Will You Be Mine, Love Story, Romantic Surprise" />
+  <meta name="author" content="Mahima's Partner" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:title" content="The Proposal | For Mahima" />
+  <meta property="og:description" content="A romantic and heartfelt proposal page created specifically for Mahima with interactive response modals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Journey For Mahima" />
+  
+  <!-- Twitter Cards SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Proposal | For Mahima" />
+  <meta name="twitter:description" content="A romantic and heartfelt proposal page created specifically for Mahima with interactive response modals." />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Premium Preloader Screen -->
+  <div id="preloader" class="preloader-overlay" aria-busy="true" aria-live="polite" aria-label="Loading page experience">
+    <div class="loader-content">
+      <div class="loader-heart-container" aria-hidden="true">
+        <div class="loader-heart"></div>
+      </div>
+      <div class="loader-title">A Journey For Mahima</div>
+      <div class="loader-progress-wrap">
+        <div class="loader-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="loader-bar-fill" id="loader-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moon Background Element -->
+  <div class="moon-container" aria-hidden="true">
+    <div class="moon"></div>
+  </div>
+
+  <!-- Background Canvas for Night Sky Stars -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- Header Navigation -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="../index.html" class="brand-logo" aria-label="For Mahima ❤️ Homepage">
+          For Mahima <span class="brand-heart" aria-hidden="true">❤️</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./story.html" class="nav-link">Our Story</a></li>
+          <li><a href="./reasons.html" class="nav-link">Reasons I Like You</a></li>
+          <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./questions.html" class="nav-link">Questions</a></li>
+          <li><a href="./letter.html" class="nav-link">Love Letter</a></li>
+          <li><a href="./proposal.html" class="nav-link active" aria-current="page" style="color: var(--accent-gold); font-weight: 700;">Proposal <span aria-hidden="true">💕</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Proposal Section -->
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section class="proposal-wrapper" aria-label="Proposal Question Area">
+        <!-- Moonlight Radial Glow Backdrop -->
+        <div class="moonlight-glow" aria-hidden="true"></div>
+
+        <!-- Glassmorphism Proposal Card -->
+        <article class="proposal-card animate-fade-scale" id="proposal-card" aria-label="Special Proposal Question">
+          <div class="proposal-heart-icon" aria-hidden="true">💖</div>
+          <span class="proposal-eyebrow">Mahima...</span>
+          <p class="proposal-description" style="margin-top: 1rem; margin-bottom: 2rem;">
+            I've been a little scared to ask you this.<br>
+            But I don't want to hide how I feel anymore.
+          </p>
+          <h1 class="proposal-title">
+            Would you like to give us a chance?
+          </h1>
+
+          <div class="proposal-buttons" role="group" aria-label="Proposal Response Options">
+            <button id="btn-proposal-yes" class="btn-proposal-yes" type="button" aria-label="Accept Proposal: YES">
+              YES <span aria-hidden="true">❤️</span>
+            </button>
+            <button id="btn-proposal-no" class="btn-proposal-no" type="button" aria-label="Playful No Option">
+              No 😜
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Celebration Modal (YES ❤️) -->
+    <div id="celebration-modal" class="proposal-modal" role="dialog" aria-modal="true" aria-labelledby="celebration-modal-title">
+      <div class="modal-card animate-fade-scale">
+        <div class="modal-icon" aria-hidden="true">💖🎉✨</div>
+        <h2 id="celebration-modal-title" class="modal-title">She Said YES!</h2>
+        <p class="modal-text">
+          Mahima, you have made me happier than words could ever describe! Thank you for giving us this special chance. Our beautiful journey begins today.
+        </p>
+        <div class="modal-actions">
+          <a href="../index.html" class="btn btn-gold" style="padding: 0.9rem 2.2rem; font-size: 1.05rem;" aria-label="Celebrate Our Journey - Return to Homepage">
+            Celebrate Our Journey <span aria-hidden="true">✨</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+      <p class="footer-text">
+        Made with eternal devotion for <strong style="color: var(--accent-gold);">Mahima</strong> <span class="footer-heart" aria-hidden="true">❤️</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/reveal.js"></script>
+  <script src="../js/confetti.js"></script>
+  <script src="../js/fireworks.js"></script>
+  <script src="../js/floating-hearts.js"></script>
+  <script src="../js/cursor-trail.js"></script>
+  <script src="../js/proposal.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
