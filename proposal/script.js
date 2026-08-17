@@ -488,10 +488,6 @@ function initParticleCanvas() {
   animate();
 }
 
-  // Interactive Letter Envelope & Typewriter Effect
-  initLetterEnvelope();
-}, {AllowMultiple:false,EndLine:599,ReplacementContent:
-
 /**
  * Site Lock System
  * Requires password "you are mine" to unlock and view the website.
